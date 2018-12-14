@@ -29,9 +29,12 @@ class Content extends Component {
 
   componentDidMount() {
     const cities = getFromStorage();
-    cities.forEach(city => {
-      this.props.addCity(city);
-    });
+
+    if (cities !== undefined && cities !== null && cities.length > 0) {
+      cities.forEach(city => {
+        this.props.addCity(city);
+      });
+    }
   }
 
   render() {

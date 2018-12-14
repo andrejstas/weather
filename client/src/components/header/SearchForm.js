@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { addCity } from '../../actions/city';
 import { saveToStorage } from '../../helper/storage';
+const removeDiacritics = require('diacritics').remove;
 
 const SearchFormBlock = styled.div``;
 
@@ -36,8 +37,9 @@ class SearchForm extends Component {
 
   onFormSubmit = e => {
     e.preventDefault();
-    saveToStorage(this.state.city);
-    this.props.addCity(this.state.city);
+    const city = removeDiacritics(this.state.city);
+    saveToStorage(city);
+    this.props.addCity(city);
     this.setState({ city: '' });
   };
 

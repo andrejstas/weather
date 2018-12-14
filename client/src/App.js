@@ -14,12 +14,16 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
   }
-  #root{
-    background: rgb(245, 248, 252);
-    font-family: 'Roboto', sans-serif;
-  }
+
+  
   h1{
     font-family: 'Montserrat', sans-serif;
+  }
+  #root{
+    background: rgb(245, 248, 252);
+  }
+  div{
+    font-family: 'Roboto', sans-serif;
   }
   .fade-enter {
     opacity: 0;

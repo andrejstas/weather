@@ -14,7 +14,7 @@ module.exports = app => {
         res.send(response.data);
       })
       .catch(function(error) {
-        res.send(error);
+        res.send('error');
       });
   });
 };

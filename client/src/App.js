@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css?family=Roboto');
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
   }
-  body{
+  #root{
     background: rgb(245, 248, 252);
     font-family: 'Roboto', sans-serif;
   }

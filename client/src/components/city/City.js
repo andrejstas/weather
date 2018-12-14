@@ -95,7 +95,10 @@ export default class City extends Component {
         <Title>{name}</Title>
         <MainInfo>
           <div>Temp.: {kelvinToCelsius(temp)}°C</div>
-          <img src={`http://openweathermap.org/img/w/${icon}.png`} />
+          <img
+            alt="icon"
+            src={`https://openweathermap.org/img/w/${icon}.png`}
+          />
           <div>Humi.: {humidity}%</div>
         </MainInfo>
         <AdditionalInfo>

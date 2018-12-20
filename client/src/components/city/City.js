@@ -19,9 +19,10 @@ const CityBlock = styled.div`
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  box-shadow: rgba(22, 23, 26, 0.15) 0px 4px 38px;
 `;
 const Title = styled.div`
-  background: linear-gradient(#9628ce, #5600ff);
+  background: #9628ce;
   line-height: 4rem;
   text-align: center;
   font-size: 1.4rem;
@@ -42,7 +43,7 @@ const MainInfo = styled.div`
   }
   div {
     margin: 0.9rem 0.7rem 0;
-    color: #999;
+    color: #333;
     font-size: 0.9rem;
   }
 `;

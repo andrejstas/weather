@@ -59,6 +59,15 @@ const Wrapper = styled.div`
   grid-auto-rows: minmax(1rem, auto);
   grid-template-rows: 3rem min-content 3rem;
   min-height: 100vh;
+
+  @media (max-width: 850px) {
+    grid-template-columns:
+      [full-start] minmax(1rem, 1fr) [center-start] repeat(
+        3,
+        [col-start] minmax(min-content, 20rem) [col-end]
+      )
+      [center-end] minmax(1rem, 1fr) [full-end];
+  }
 `;
 
 class App extends Component {

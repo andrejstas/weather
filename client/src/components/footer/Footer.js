@@ -9,6 +9,6 @@ const FooterBlock = styled.div`
 
 export default class Header extends Component {
   render() {
-    return <FooterBlock>Andrej Staš for Inventi</FooterBlock>;
+    return <FooterBlock>Andrej Staš</FooterBlock>;
   }
 }

@@ -16,6 +16,10 @@ const ContentBlock = styled.div`
   margin: 3rem 0;
   justify-items: center;
 
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
   @media (max-width: 700px) {
     grid-template-columns: 1fr;
   }

@@ -23,6 +23,11 @@ const Button = styled.button`
   border-radius: 3px;
   background-color: #3c3c3c;
   color: #a0afc0;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
 `;
 
 const Form = styled.form`

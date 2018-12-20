@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import SearchForm from './SearchForm';
+import Reset from './Reset';
 
 const HeaderBlock = styled.div`
   grid-column: full-start / full-end;
@@ -11,7 +12,7 @@ const HeaderBlock = styled.div`
   color: rgb(163, 175, 191);
   align-items: center;
   @media (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
@@ -28,6 +29,7 @@ export default class Header extends Component {
       <HeaderBlock>
         <Logo>Weather</Logo>
         <SearchForm />
+        <Reset />
       </HeaderBlock>
     );
   }

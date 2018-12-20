@@ -1,7 +1,9 @@
 const storageName = 'c';
+const defaultValue = [];
 
 const saveToStorage = city => {
-  const newCities = JSON.parse(localStorage.getItem(storageName)) || [];
+  const newCities =
+    JSON.parse(localStorage.getItem(storageName)) || defaultValue;
   newCities.push(city);
   localStorage.setItem(storageName, JSON.stringify(newCities));
 };
@@ -14,8 +16,17 @@ const removeFromStorage = city => {
   localStorage.setItem(storageName, JSON.stringify(newCities));
 };
 
+const removeAllFromStorage = () => {
+  localStorage.setItem(storageName, JSON.stringify(defaultValue));
+};
+
 const getFromStorage = () => {
   return JSON.parse(localStorage.getItem(storageName));
 };
 
-export { saveToStorage, removeFromStorage, getFromStorage };
+export {
+  saveToStorage,
+  removeFromStorage,
+  getFromStorage,
+  removeAllFromStorage
+};
